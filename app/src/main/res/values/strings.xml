@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="choose_by_country">|Choose by Country</string>
+    <string name="latest_arrivals">|Latest Arrivals</string>
+    <string name="view_all">view all</string>
+    <string name="brand">BRAND</string>
+    <string name="need_help">NEED HELP?</string>
+    <string name="customer_service">CUSTOMER SERVICE</string>
+    <string name="call_now">Call now</string>
+    <string name="popular_products">|Popular Products</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="looking_for_search_by">LOOKING FOR? SEARCH BY</string>
+    <string name="what_you">WHAT YOU</string>
+    <string name="find">FIND</string>
+    <string name="can_t">CAN\'T</string>
+    <string name="browse_by">BROWSE BY</string>
+    <string name="new_product_from_leica_brand">New Product from Leica Brand</string>
+    <string name="camera">Camera</string>
+    <string name="new_tag">New</string>
+    <string name="_34_off">34% off</string>
+</resources>

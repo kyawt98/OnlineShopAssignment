@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_latest_arrivals"
+    android:layout_width="180dp"
+    android:layout_height="250dp"
+    app:cardBackgroundColor="#81EBE3E3"
+    app:cardCornerRadius="@dimen/dimen_4"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/latest_arrival_img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/latest_arrival_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:text="Hyde Park N41015"
+            android:textColor="#070707"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/latest_arrival_img"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/latest_arrival_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:text="LOUIS VUITTON"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/latest_arrival_name"
+            app:layout_constraintTop_toBottomOf="@id/latest_arrival_name" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_star"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            app:cardElevation="@dimen/dimen_2"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/star_1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/star"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/star_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/star_2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/star"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/star_1"
+                    app:layout_constraintRight_toLeftOf="@id/star_3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/star_3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/star"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/star_2"
+                    app:layout_constraintRight_toLeftOf="@id/star_4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/star_4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/star"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/star_3"
+                    app:layout_constraintRight_toLeftOf="@id/star_5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/star_5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/halfstar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/star_4"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_price"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            app:cardElevation="@dimen/dimen_2"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/card_star">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/latest_arrival_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200000"
+                    android:textAlignment="center"
+                    android:textColor="#DF4616"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
